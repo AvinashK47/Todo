@@ -1,0 +1,7 @@
+<ul>
+    {% for task in tasks %}
+    <li>{{ task.title }}</li>
+    {% empty %}
+    <li>No tasks available</li>
+    {% endfor %}
+</ul>
